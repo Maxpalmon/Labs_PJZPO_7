@@ -34,7 +34,7 @@ void ShowVector(std::vector<int>& arr){
     std::cout << std::endl;
 }
 
-void TestSortArr1() {
+void testSortRandVector() {
     std::vector<int> arr = { 1,2,3,4,5,6,7,8,9 };
     assert(arr1 == arr);
     
@@ -44,37 +44,37 @@ void TestSortArr1() {
     std::cout << "Test is succesfull" << std::endl;
 }
 
-void TestSortArr2() {
+void testSortRandVectorWithNegativeDigitals() {
     std::vector<int> arr = { -2,3,7,10 };
     assert(arr2 == arr);
     std::cout << "Test is succesfull" << std::endl;
 }
 
-void TestSortArr3() {
+void testSortVectorWithSimilarZeros() {
     std::vector<int> arr = {0,0,0,0,0};
     assert(arr3 == arr);
     std::cout << "Test is succesfull" << std::endl;
 }
 
-void TestSortArr4() {
+void testSortVectorWithOnlyNegativeDigitals() {
     std::vector<int> arr = {-44,-12,-2,2,88};
     assert(arr4 == arr);
     std::cout << "Test is succesfull" << std::endl;
 }
 
-void TestSortArr5() {
+void testSortVectorAlreadySorted() {
     std::vector<int> arr = { 1,2,3,4,5 };
     assert(arr5 == arr);
     std::cout << "Test is succesfull" << std::endl;
 }
 
-void TestSortArr6() {
+void testSortAtomacityVector() {
     std::vector<int> arr = { 1 };
     assert(arr6 == arr);
     std::cout << "Test is succesfull" << std::endl;
 }
 
-void TestSortArr7() {
+void testSortVectorEmpty() {
     std::vector<int> arr = {  };
     assert(arr7 == arr);
     std::cout << "Test is succesfull" << std::endl;
@@ -104,13 +104,13 @@ int main() {
     shellSort(arr7);
     ShowVector(arr7);
 
-    TestSortArr1();
-    TestSortArr2();
-    TestSortArr3();
-    TestSortArr4();
-    TestSortArr5();
-    TestSortArr6();
-    TestSortArr7();
+    testSortRandVector();
+    testSortRandVectorWithNegativeDigitals();
+    testSortVectorWithSimilarZeros();
+    testSortVectorWithOnlyNegativeDigitals();
+    testSortVectorAlreadySorted();
+    testSortAtomacityVector();
+    testSortVectorEmpty();
 
     return 0;
 }
